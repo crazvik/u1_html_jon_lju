@@ -1,7 +1,7 @@
 body {
     margin: 0px;
 }
-ul.navigation {
+.navigation {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -11,7 +11,7 @@ ul.navigation {
     width: 100%;
     box-shadow: 2px 2px 2px gray;
 }
-ul.navigation>li a{
+.navigation>li a{
     text-align: center;
     display: inline-block;
     font-family: 'Roboto', sans-serif;
@@ -21,15 +21,44 @@ ul.navigation>li a{
     text-decoration: none;
     color: black;
 }
-ul.navigation>li {
+.navigation>li {
     float: left;
 }
-ul.navigation>li a:hover {
+.navigation>li a:hover {
     background-color: #89764a;
 }
-ul.navigation>li a.active {
+.navigation>li a.active {
     background-color: #9d8854;
 }
+
+.tools>ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:#C5AA6A;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 2px 2px 2px gray;
+}
+.tools>ul li {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding: 25px;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+.fa {
+    font-size: 100%;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
 
 [class*="col-"] {
     width: 100%;
