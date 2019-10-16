@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+}
+ul.navigation {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color:#C5AA6A;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 2px 2px 2px gray;
+}
+ul.navigation>li a{
+    text-align: center;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    padding: 15px;
+    margin: 0px;
+    text-decoration: none;
+}
+ul.navigation>li {
+    float: left;
+}
+ul.navigation>li a:hover {
+    background-color: #9d8854;
+}
+ul.navigation>li a.active {
+    background-color: #9d8854;
+}
