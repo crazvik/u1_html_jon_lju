@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 .navigation {
     list-style-type: none;
@@ -14,7 +15,6 @@ body {
 .navigation>li a{
     text-align: center;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     padding: 25px;
     margin: 0px;
@@ -44,7 +44,6 @@ body {
 .tools>ul li {
     display: inline-block;
     font-size: 30px;
-    font-family: 'Roboto', sans-serif;
     margin: 5px;
 }
 .text {
@@ -84,6 +83,11 @@ body {
 
 .social-media a:hover {
     opacity: 0.7;
+}
+
+.main-window>h1 {
+    margin: 140px 0 0 15px;
+    font-size: 50px;
 }
 
 [class*="col-"] {
