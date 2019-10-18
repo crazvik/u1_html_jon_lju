@@ -85,23 +85,32 @@ body {
     opacity: 0.7;
 }
 
+.tools>iframe {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
 .main-window>h1 {
     margin: 140px 0 0 15px;
     font-size: 50px;
 }
+
 .main-window>p{
     margin-left: 20px;
 }
-.main-window>h3 {
+
+.main-window>h4 {
     margin-bottom: -35px;
     margin-left: 20px;
-
 }
+
 #border {
     border-bottom: 1px solid black;
     position: relative;
     margin: 10px 30px 10px 30px;
 }
+
 [class*="col-"] {
     width: 100%;
   }
