@@ -89,7 +89,19 @@ body {
     margin: 140px 0 0 15px;
     font-size: 50px;
 }
+.main-window>p{
+    margin-left: 20px;
+}
+.main-window>h3 {
+    margin-bottom: -35px;
+    margin-left: 20px;
 
+}
+#border {
+    border-bottom: 1px solid black;
+    position: relative;
+    margin: 10px 30px 10px 30px;
+}
 [class*="col-"] {
     width: 100%;
   }
