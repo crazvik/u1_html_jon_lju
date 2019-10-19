@@ -2,6 +2,11 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
 }
+iframe {
+    width: 102px;
+    height: 102px; 
+    border: 0;
+}
 .navigation {
     list-style-type: none;
     margin: 0px;
@@ -15,8 +20,8 @@ body {
 .navigation>li a{
     text-align: center;
     display: inline-block;
-    font-size: 50px;
-    padding: 25px;
+    font-size: 20px;
+    padding: 10px;
     margin: 0px;
     text-decoration: none;
     color: black;
@@ -34,7 +39,7 @@ body {
 .tools>ul {
     list-style-type: none;
     margin: 0px;
-    padding: 10px;
+    padding: 5px;
     background-color:#C5AA6A;
     position: fixed;
     bottom: 0;
@@ -43,7 +48,7 @@ body {
 }
 .tools>ul li {
     display: inline-block;
-    font-size: 30px;
+    font-size: 10px;
     margin: 5px;
 }
 .text {
@@ -54,18 +59,18 @@ body {
     position: relative;
     margin-top: -10px;
 }
-
-.tools .social-media {
+.social-media {
     position: fixed;
     bottom: 0;
+    margin-left: -35px;
 }
 .social-media a {
     display: inline-block;
     text-align: center;
-    padding: 23px;
+    padding: 10px;
     color: white;
-    font-size: 50px;
-    margin-left: -9px;
+    font-size: 20px;
+    margin-left: -5px;
 }
 
 .reddit {
@@ -91,24 +96,56 @@ body {
     right: 0px;
 }
 
-.main-window>h1 {
-    margin: 140px 0 0 15px;
-    font-size: 50px;
+.main-window {
+    overflow: auto;
+    height: 800px;
+}
+.main-window>h3 {
+    margin: 50px 0 0 15px;
 }
 
-.main-window>p{
-    margin-left: 20px;
+.main-window>p {
+    margin-left: 10px;
+    margin-right: 10;
+    font-size: 15px;
 }
 
-.main-window>h4 {
-    margin-bottom: -35px;
-    margin-left: 20px;
+.main-window>h5 {
+    margin-bottom: -15px;
+    margin-left: 10px;
 }
 
 #border {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid darkgray;
     position: relative;
-    margin: 10px 30px 10px 30px;
+    margin: 10px 20px 10px 20px;
+}
+
+input {
+    width: 95%;
+    margin: 15px 10px 0px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+textarea {
+    width: 95%;
+    margin: 15px 10px -4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: inherit;
+}
+input[type=submit] {
+    padding: 20px;
+    width: 95%;
+    margin: 15px 10px -4px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: inherit;
+    background-color: darkolivegreen;
 }
 
 [class*="col-"] {
