@@ -98,7 +98,8 @@ iframe {
 
 .main-window {
     overflow: auto;
-    height: 800px;
+    height: auto;
+    padding-bottom: 100px;
 }
 .main-window>h3 {
     margin: 50px 0 0 15px;
@@ -113,6 +114,15 @@ iframe {
 .main-window>h5 {
     margin-bottom: -15px;
     margin-left: 10px;
+}
+
+.main-window>img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #border {
@@ -151,3 +161,7 @@ input[type=submit] {
 [class*="col-"] {
     width: 100%;
   }
+
+@media only screen and (min-device-width: 1024px) {
+    
+}
