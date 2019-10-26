@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
         <meta name="author" content="Jonatan L">
-        <meta name="description" content="examintation assingment">
+        <meta name="description" content="examintation assignment">
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <nav class="navigation">
             <ul>
-                <li id="header"><h3>Bacon Ipsum</h3></li>
+                <li class="header"><h3>Bacon Ipsum</h3></li>
                 <li>
                     <ul class="links">
                         <li><a href="index.html">Home</a></li>
@@ -23,16 +23,13 @@
                 </li>
             </ul>
         </nav>
-        <section class="main-window">
+        <section class="main-window-contacts">
             <h3>For more info, please use the form provided below</h3>
-            <div id="border"></div>
-            <form>
-                <input type="text" name="name" id="full-name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="subject" id="subject" placeholder="Subject">
-            </form>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
-            <form>
+            <form action="contacts.html">
+                <input type="text" name="name" id="full-name" placeholder="Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea>
                 <input type="submit" name="submit" id="submit" value="Submit">
             </form>
         </section>
