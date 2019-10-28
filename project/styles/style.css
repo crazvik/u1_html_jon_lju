@@ -3,24 +3,28 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.navigation {
+    color: white;
+}
 .navigation>ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    background-color:#C5AA6A;
+    background-color:#333;
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 .links {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    background-color:#C5AA6A;
-    width: 100%;
+    background-color:#333;
+    width: 105%;
     display: inline-block;
-    box-shadow: gray 2px 2px 2px;
+    box-shadow: #333 0px 5px 10px;
 }
 
 .links>li a{
@@ -30,7 +34,7 @@ body {
     padding: 10px;
     margin: 0px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .links>li {
@@ -38,16 +42,15 @@ body {
 }
 
 .links>li a:hover {
-    background-color: #89764a;
+    background-color: #595959;
 }
 
 .links>li a.active {
-    background-color: #9d8854;
+    background-color: #1b3c7e;
 }
 
 .header {
     text-align: center;
-    margin-left: 10px;
     margin-top: -10px;
     margin-bottom: -20px;
     font-size: 20px;
@@ -57,7 +60,7 @@ body {
     list-style-type: none;
     margin: 0px;
     padding: 5px;
-    background-color:#C5AA6A;
+    background-color:#333;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -78,6 +81,7 @@ body {
 .text>p {
     position: relative;
     margin-top: -10px;
+    color: white;
 }
 
 .social-media {
@@ -120,6 +124,7 @@ body {
     height: auto;
     padding-bottom: 100px;
     overflow: hidden;
+    z-index: 3;
 }
 
 .main-window>p {
@@ -188,7 +193,6 @@ input[type=submit] {
 
 [class*="col-sm-"]>img {
     display: inline-block;
-    z-index: -1;
     position: relative;
     width: 300px;
     height: 300px;
@@ -216,8 +220,16 @@ input[type=submit] {
 }
 
 @media only screen and (min-device-width: 1024px) {
+    body {
+        background-color: #659DBD;
+    }
     .main-window {
-        padding-bottom: 300px;
+        width: 70%;
+        margin: auto;
+        background-color: white;
+    }
+    .main-window>p {
+        margin: 15px 20px;
     }
     .main-window>img {
         float: right;
@@ -237,14 +249,19 @@ input[type=submit] {
         display: none;
     }
     .main-window-contacts {
-        width: 400px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+        background-color: white;
+        height: 1500px;
     }
-    input {
-        width: 380px;
+    .main-window-contacts>h3 {
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
     }
-    input[type=submit] {
-        width: 380px;
+    .main-window-contacts>form {
+        width: 50%;
+        margin: auto;
+        margin-top: 0px;
     }
 }
