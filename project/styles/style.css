@@ -150,10 +150,27 @@ body {
     margin-left: 10px;
 }
 
+.main-window-recipes {
+    padding-top: 80px;
+    overflow: auto;
+    height: auto;
+    padding-bottom: 100px;
+    overflow: hidden;
+    z-index: 3;
+}
+
 [id*="border"] {
     border-bottom: 1px solid darkgray;
     position: relative;
     margin: 10px 20px 10px 20px;
+}
+.hours {
+    list-style-type: none;
+    margin: 50px;
+}
+
+.hours>div {
+    margin-left: 30px;
 }
 
 input {
@@ -223,20 +240,34 @@ input[type=submit] {
     body {
         background-color: #659DBD;
     }
+
     .main-window {
         width: 70%;
         margin: auto;
         background-color: white;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
     }
+
+    .main-window-recipes {
+        width: 70%;
+        margin: auto;
+        background-color: white;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+    }
+
     .main-window>p {
         margin: 15px 20px;
     }
+
     .main-window>img {
         float: right;
         width: 500px;
         height: 300px;
         padding-top: 20px;
     }
+
     iframe {
         position: fixed;
         bottom: 0;
@@ -245,14 +276,18 @@ input[type=submit] {
         height: 300px;
         border-style: none;
     }
+
     #border1 {
         display: none;
     }
+
     .main-window-contacts {
         width: 70%;
         margin: auto;
         background-color: white;
         height: 1500px;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
     }
     .main-window-contacts>h3 {
         text-align: center;
