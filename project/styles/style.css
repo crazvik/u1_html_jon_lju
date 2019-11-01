@@ -121,7 +121,7 @@ body {
 .main-window {
     padding-top: 80px;
     overflow: auto;
-    height: auto;
+    height: 105%;
     padding-bottom: 100px;
     overflow: hidden;
     z-index: 3;
@@ -213,7 +213,6 @@ input[type=submit] {
     position: relative;
     width: 300px;
     height: 300px;
-    margin-top: 30px;
 }
 
 @media only screen and (max-device-width: 1024px) {
@@ -234,9 +233,31 @@ input[type=submit] {
         right: 0px;
         z-index: 1;
     }
-}
 
-@media only screen and (min-device-width: 1024px) {
+    [class*="col-sm-"]>img {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1439px) {
+    [class*="col-sm-"]>img {
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 20px 20px 0px 20px;
+    }
+
+    .main-window>img {
+        float: right;
+        width: 500px;
+        height: 300px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (min-device-width: 1440px) {
     body {
         background-color: #659DBD;
     }
@@ -247,6 +268,7 @@ input[type=submit] {
         background-color: white;
         border-left: 1px solid #333;
         border-right: 1px solid #333;
+        height: 105%;
     }
 
     .main-window-recipes {
@@ -298,5 +320,13 @@ input[type=submit] {
         width: 50%;
         margin: auto;
         margin-top: 0px;
+    }
+
+    [class*="col-sm-"]>img {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin-top: 30px;
     }
 }
