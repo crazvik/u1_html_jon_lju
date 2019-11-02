@@ -223,7 +223,12 @@ iframe {
     right: 0px;
     z-index: 1;
 }
-@media only screen and (max-width: 1024px) {
+
+h1 {
+    margin: 20px;
+}
+
+@media only screen and (max-width: 698px) {
     .main-window>img {
         padding-top: 20px;
         display: block;
@@ -232,15 +237,24 @@ iframe {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media only screen and (min-width: 699px) {
+    .main-window>img {
+        float: right;
+        width: 500px;
+        height: 300px;
+        padding-top: 20px;
+    }
 
     [class*="col-sm-"]>img {
         display: inline-block;
         position: relative;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
     body {
         background-color: #659DBD;
     }
@@ -252,13 +266,21 @@ iframe {
         border-right: 1px solid #333;
         height: 105%;
     }
+    .main-window-contacts {
+        width: 70%;
+        margin: auto;
+        background-color: white;
+        height: 1500px;
+        border-left: 1px solid #333;
+        border-right: 1px solid #333;
+    }
 
     [class*="col-sm-"]>img {
         display: inline-block;
         position: relative;
         width: 200px;
         height: 200px;
-        margin: 20px 20px 0px 20px;
+        margin-top: 20px;
     }
 
     .main-window>img {
@@ -268,8 +290,8 @@ iframe {
         padding-top: 20px;
     }
     iframe {
-        width: 200px;
-        height: 200px; 
+        width: 165px;
+        height: 165px; 
         border: 0;
         position: fixed;
         bottom: 0px;
